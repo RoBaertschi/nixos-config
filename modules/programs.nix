@@ -47,5 +47,9 @@
           ripgrep
         ])
       ];
+    programs.neovim = lib.mkIf config.progs.programming.enable {
+      enable = true;
+      defaultEditor = true;
+    };
   };
 }
