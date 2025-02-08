@@ -32,7 +32,7 @@ with lib.types; {
       isNormalUser = true;
       description = config.main-user.description;
       extraGroups = ["networkmanager" "wheel" "audio" "video" "robin"];
-      packages = with pkgs; [oh-my-zsh];
+      packages = with pkgs; [];
       shell = pkgs.zsh;
     };
   };

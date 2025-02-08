@@ -74,6 +74,11 @@
     # EDITOR = "emacs";
   };
 
+  programs.zsh.oh-my-zsh= {
+    enable = true;
+    plugins = [ "git" "sudo" "fzf" ];
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
