@@ -1,5 +1,6 @@
 {
   config,
+  inputs,
   pkgs,
   ...
 }: {
@@ -40,8 +41,8 @@
   ];
 
   home.pointerCursor = {
-    name = "rose-pine-cursor";
-    package = pkgs.rose-pine-cursor;
+    name = "rose-pine-hyprcursor";
+    package = inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default;
     size = 30;
     gtk.enable = true;
     x11.enable = true;
