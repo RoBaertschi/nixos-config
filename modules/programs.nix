@@ -34,7 +34,7 @@
           pkgs.kdePackages.qtsvg
           pkgs.kdePackages.kdegraphics-thumbnailers
           pkgs.kdePackages.kio-extras
-          # pkgs.kdePackages.kservice
+          pkgs.kdePackages.kservice
           neovim
         ]
         (lib.mkIf (config.progs.programming.enable) [

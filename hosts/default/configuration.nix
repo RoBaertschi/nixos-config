@@ -108,7 +108,8 @@
   # hardware.pulseaudio.enable = true;
   hardware.bluetooth.enable = true;
 
-  xdg.configFile."menus/applications.menu".text = builtins.readFile ../../applications.menu;
+  xdg.menus.enable = true;
+  # xdg.configFile."menus/applications.menu".text = builtins.readFile ../../applications.menu;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
