@@ -41,6 +41,7 @@
 
           # Utils
           git
+          gh
           fzf
           ripgrep
         ])
