@@ -44,9 +44,10 @@ in {
     pkgs.nerd-fonts.jetbrains-mono
     cursorPackage
 
-    pkgs.qt6ct
     pkgs.kdePackages.breeze
     pkgs.kdePackages.qtsvg
+    pkgs.kdePackages.kdegraphics-thumbnailers
+    # pkgs.libsForQt6.kio-extras
   ];
 
   home.pointerCursor = {
