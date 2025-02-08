@@ -36,6 +36,8 @@
   };
   boot.loader.efi.canTouchEfiVariables = true;
 
+  services.flatpak.enable = true;
+
   networking.hostName = "deez-nix"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
