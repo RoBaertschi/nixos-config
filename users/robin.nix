@@ -43,6 +43,7 @@ in {
     # '')
     pkgs.nerd-fonts.jetbrains-mono
     cursorPackage
+    pkgs.zoxide
     # pkgs.libsForQt6.kio-extras
   ];
 
@@ -100,10 +101,25 @@ in {
     # EDITOR = "emacs";
   };
 
+  programs.zsh = {
+    syntaxHighlighting = {
+      enable = true;
+    };
+    autosuggestion = {
+      enable = true;
+    };
+    localVariables = {
+      ZOXIDE_CMD_OVERRIDE = "cd";
+    };
+    initExtraFirst = ''
+    export XDG_DATA_DIRS=$XDG_DATA_DIRS:/usr/share:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share
+    '';
+  };
+
   programs.zsh.enable = true;
   programs.zsh.oh-my-zsh= {
     enable = true;
-    plugins = [ "git" "sudo" "fzf" ];
+    plugins = [ "git" "sudo" "fzf" "zoxide" ];
     theme = "robbyrussell";
   };
 
