@@ -73,6 +73,7 @@ with lib; {
 
               playerctl
 
+              rose-pine-cursor
               inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
             ];
           };
