@@ -42,6 +42,7 @@ in {
     #   echo "Hello, ${config.home.username}!"
     # '')
     pkgs.nerd-fonts.jetbrains-mono
+          pkgs.libsForQt5.kservice
     cursorPackage
     # pkgs.libsForQt6.kio-extras
   ];
