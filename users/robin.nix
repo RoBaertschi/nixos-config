@@ -43,10 +43,6 @@ in {
     # '')
     pkgs.nerd-fonts.jetbrains-mono
     cursorPackage
-
-    pkgs.kdePackages.breeze
-    pkgs.kdePackages.qtsvg
-    pkgs.kdePackages.kdegraphics-thumbnailers
     # pkgs.libsForQt6.kio-extras
   ];
 

@@ -28,7 +28,13 @@
           alacritty
           firefox
           pavucontrol
+
           dolphin
+          pkgs.kdePackages.breeze
+          pkgs.kdePackages.qtsvg
+          pkgs.kdePackages.kdegraphics-thumbnailers
+          pkgs.kdePackages.kio-extras
+
           neovim
         ]
         (lib.mkIf (config.progs.programming.enable) [
