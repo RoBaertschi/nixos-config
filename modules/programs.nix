@@ -13,6 +13,7 @@
     };
   };
   config = lib.mkIf config.progs.enable {
+    programs.steam.enable = true;
     environment.systemPackages = with pkgs;
       lib.mkMerge [
         [
