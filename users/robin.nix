@@ -46,7 +46,7 @@
     size = 30;
     gtk.enable = true;
     x11.enable = true;
-    x11.defaultCursor = "rose-pine-cursor";
+    x11.defaultCursor = "rose-pine-hyprcursor";
     hyprcursor = {
       size = 30;
       enable = true;
@@ -55,8 +55,8 @@
   gtk = {
     enable = true;
     cursorTheme = {
-      package = pkgs.rose-pine-cursor;
-      name = "rose-pine-cursor";
+      package = inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default;
+      name = "rose-pine-hyprcursor";
     };
   };
 
