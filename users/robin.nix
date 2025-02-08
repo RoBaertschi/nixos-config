@@ -77,6 +77,7 @@
   programs.zsh.oh-my-zsh= {
     enable = true;
     plugins = [ "git" "sudo" "fzf" ];
+    theme = "robbyrussell";
   };
 
   # Let Home Manager install and manage itself.
