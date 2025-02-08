@@ -3,8 +3,8 @@
   inputs,
   pkgs,
   ...
-}: 
-let cursorPackage = pkgs.bibata-cursors;
+}: let
+  cursorPackage = pkgs.bibata-cursors;
   cursorTheme = "Bibata-Modern-Classic";
   cursorSize = 28;
 in {
@@ -112,14 +112,14 @@ in {
       ZOXIDE_CMD_OVERRIDE = "cd";
     };
     initExtraFirst = ''
-    export XDG_DATA_DIRS=$XDG_DATA_DIRS:/usr/share:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share
+      export XDG_DATA_DIRS=$XDG_DATA_DIRS:/usr/share:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share
     '';
   };
 
   programs.zsh.enable = true;
-  programs.zsh.oh-my-zsh= {
+  programs.zsh.oh-my-zsh = {
     enable = true;
-    plugins = [ "git" "sudo" "fzf" "zoxide" ];
+    plugins = ["git" "sudo" "fzf" "zoxide"];
     theme = "robbyrussell";
   };
 

@@ -18,17 +18,7 @@ with lib; {
         "${config.main-user.userName}" = {
           # wayland.windowManager.hyprland.enable = true;
           home = {
-            file = {
-              ".config/hypr/hyprland.conf".source = ../hypr/hyprland.conf;
-              ".config/hypr/hypridle.conf".source = ../hypr/hypridle.conf;
-              ".config/hypr/hyprpaper.conf".source = ../hypr/hyprpaper.conf;
-              ".config/hypr/wallpaper1.png".source = ../hypr/wallpaper1.png;
-              ".config/fuzzel/fuzzel.ini".source = ../hypr/fuzzel.ini;
-              ".config/hypr/ac.py".source = ../hypr/ac.py;
-              ".config/waybar/".source = ../waybar;
-              ".config/kanata/config.kbd".source = ../hypr/config.kbd;
-              ".config/mako/config".source = ../mako/config;
-            };
+            file = (import ../configs {}).hyprland;
             packages = with pkgs; [
               hyprland
 
