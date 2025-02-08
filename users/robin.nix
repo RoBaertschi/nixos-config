@@ -47,6 +47,13 @@
     x11.enable = true;
     x11.defaultCursor = "rose-pine-cursor";
   };
+  gtk = {
+    enable = true;
+    cursorTheme = {
+      package = pkgs.rose-pine-cursor;
+      name = "rose-pine-cursor";
+    };
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
