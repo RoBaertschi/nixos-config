@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: 
-let cursorPackage = pkgs.pkgs.bibata-cursors; cursorTheme = "Bibata-Modern-Classic"; cursorSize = 30; in {
+let cursorPackage = pkgs.pkgs.bibata-cursors; cursorTheme = "Bibata-Modern-Classic"; cursorSize = 28; in {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "robin";
