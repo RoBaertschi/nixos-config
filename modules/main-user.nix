@@ -27,6 +27,9 @@ with lib.types; {
   };
 
   config = lib.mkIf config.main-user.enable {
+    environment.systemPackages = with pkgs; [
+      oh-my-zsh
+    ];
     programs.zsh.enable = true;
     users.users.${config.main-user.userName} = {
       isNormalUser = true;
