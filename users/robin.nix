@@ -46,6 +46,10 @@
     gtk.enable = true;
     x11.enable = true;
     x11.defaultCursor = "rose-pine-cursor";
+    hyprcursor = {
+      size = 30;
+      enable = true;
+    };
   };
   gtk = {
     enable = true;
