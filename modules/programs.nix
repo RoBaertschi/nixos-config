@@ -47,6 +47,7 @@
           rustup
           bun
           nodejs_23
+          go
 
           # Utils
           git
