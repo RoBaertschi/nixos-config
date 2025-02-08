@@ -7,7 +7,7 @@
 let cursorPackage = pkgs.bibata-cursors;
   cursorTheme = "Bibata-Modern-Classic";
   cursorSize = 28;
-  iconPackage = pkgs.qt6ct;
+  iconPackage = pkgs.kdePackages.breeze;
 in {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -43,8 +43,10 @@ in {
     #   echo "Hello, ${config.home.username}!"
     # '')
     pkgs.nerd-fonts.jetbrains-mono
-  cursorPackage
+    cursorPackage
     iconPackage
+
+    pkgs.qt6ct
   ];
 
   home.pointerCursor = {
