@@ -36,6 +36,7 @@
           gnumake
 
           # Languages
+          rustup
           bun
           nodejs_23
 
