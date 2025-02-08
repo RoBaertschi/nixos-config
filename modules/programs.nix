@@ -29,7 +29,7 @@
           firefox
           pavucontrol
 
-          dolphin
+          kdePackages.dolphin
           pkgs.kdePackages.breeze
           pkgs.kdePackages.qtsvg
           pkgs.kdePackages.kdegraphics-thumbnailers
