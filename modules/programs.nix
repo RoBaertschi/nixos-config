@@ -25,6 +25,7 @@
           fastfetch
 
           kitty
+          alacritty
           firefox
           pavucontrol
           dolphin

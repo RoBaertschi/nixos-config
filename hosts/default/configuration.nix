@@ -6,6 +6,7 @@
   config,
   pkgs,
   inputs,
+  lib,
   ...
 }: {
   imports = [
@@ -61,19 +62,20 @@
   # Configure console keymap
   console.keyMap = "sg";
 
-  home-manager = {
-    extraSpecialArgs = {inherit inputs;};
-    users = {
-      "robin" = import ../../users/robin.nix;
-    };
-  };
-
   # Modules
   progs = {
     enable = true;
     programming.enable = true;
   };
   main-user.enable = true;
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "${config.main-user.userName}" = import ../../users/robin.nix;
+    };
+  };
+
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

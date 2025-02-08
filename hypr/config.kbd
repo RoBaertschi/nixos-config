@@ -1,0 +1,26 @@
+;; vim: set ft=clojure:
+(defcfg 
+  process-unmapped-keys no
+  log-layer-changes yes
+  )
+
+(deflocalkeys-linux
+  ^ 13)
+
+(defsrc
+  caps
+  rctrl
+  ^
+ )
+
+(defalias
+  escctrl (tap-hold 100 250 esc lctrl)
+  capsctrl (tap-hold 100 100 caps rctrl)
+  hat (macro ^ spc)
+)
+
+(deflayer base
+  @escctrl  ;; caps
+  @capsctrl ;; rctrl
+  @hat      ;; = (^ on a german keyboard)
+)
