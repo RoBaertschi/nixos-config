@@ -70,12 +70,9 @@ with lib; {
               networkmanagerapplet
 
               # Cursor theme
-              rose-pine-cursor
+              bibata-cursors
 
               playerctl
-
-              rose-pine-cursor
-              inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
             ];
           };
         };
