@@ -16,6 +16,7 @@ with lib; {
     home-manager = {
       users = {
         "${config.main-user.userName}" = {
+          # wayland.windowManager.hyprland.enable = true;
           home = {
             file = {
               ".config/hypr/hyprland.conf".source = ../hypr/hyprland.conf;

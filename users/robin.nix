@@ -41,12 +41,12 @@
   ];
 
   home.pointerCursor = {
-    name = "rose-pine-hyprcursor";
-    package = inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default;
+    name = "rose-pine-cursor";
+    package = pkgs.rose-pine-cursor;
     size = 30;
     gtk.enable = true;
     x11.enable = true;
-    x11.defaultCursor = "rose-pine-hyprcursor";
+    x11.defaultCursor = "rose-pine-cursor";
     hyprcursor = {
       size = 30;
       enable = true;
@@ -54,10 +54,10 @@
   };
   gtk = {
     enable = true;
-    cursorTheme = {
-      package = inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default;
-      name = "rose-pine-hyprcursor";
-    };
+    # cursorTheme = {
+    #   package = pkgs.rose-pine-cursor;
+    #   name = "rose-pine-cursor";
+    # };
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
