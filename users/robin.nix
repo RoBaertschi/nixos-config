@@ -39,6 +39,15 @@
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
+  home.pointerCursor = {
+    name = "rose-pine-cursor";
+    package = pkgs.rose-pine-cursor;
+    size = 30;
+    gtk.enable = true;
+    x11.enable = true;
+    x11.defaultCursor = "rose-pine-cursor";
+  };
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
