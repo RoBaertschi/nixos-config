@@ -43,6 +43,7 @@ in {
     # '')
     pkgs.nerd-fonts.jetbrains-mono
     cursorPackage
+    pkgs.libsForQt5.kservice
     # pkgs.libsForQt6.kio-extras
   ];
 
