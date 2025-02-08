@@ -7,7 +7,6 @@
 let cursorPackage = pkgs.bibata-cursors;
   cursorTheme = "Bibata-Modern-Classic";
   cursorSize = 28;
-  iconPackage = pkgs.kdePackages.breeze;
 in {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -44,9 +43,10 @@ in {
     # '')
     pkgs.nerd-fonts.jetbrains-mono
     cursorPackage
-    iconPackage
 
     pkgs.qt6ct
+    pkgs.kdePackages.breeze
+    pkgs.kdePackages.qtsvg
   ];
 
   home.pointerCursor = {
