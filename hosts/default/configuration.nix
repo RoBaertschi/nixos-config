@@ -13,6 +13,7 @@
     ./hardware-configuration.nix
     ../../modules/main-user.nix
     ../../modules/programs.nix
+    ../../modules/hyprland.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -68,14 +69,14 @@
     programming.enable = true;
   };
   main-user.enable = true;
-
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     users = {
       "${config.main-user.userName}" = import ../../users/robin.nix;
     };
+    backupFileExtension = "bak";
   };
-
+  hyprland.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
