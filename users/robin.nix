@@ -3,7 +3,8 @@
   inputs,
   pkgs,
   ...
-}: {
+}: 
+let cursorPackage = pkgs.pkgs.bibata-cursors; cursorTheme = "Bibata-Modern-Classic"; cursorSize = 30; in {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "robin";
@@ -38,17 +39,17 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     pkgs.nerd-fonts.jetbrains-mono
+  cursorPackage
   ];
 
   home.pointerCursor = {
-    name = "rose-pine-cursor";
-    package = pkgs.rose-pine-cursor;
-    size = 30;
+    name = cursorTheme;
+    package = cursorPackage;
+    size = cursorSize;
     gtk.enable = true;
     x11.enable = true;
-    x11.defaultCursor = "rose-pine-cursor";
     hyprcursor = {
-      size = 30;
+      size = cursorSize;
       enable = true;
     };
   };
