@@ -99,7 +99,8 @@
             "default": "🎜"
         },
         "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py --verbose 2> /dev/null" // Script in resources folder
-         //"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        "exec": "nix-shell -p python3Packages.pygobject3 -p gobject-introspection -p playerctl --run \"~/.config/waybar/mediaplayer.py\"",
+        //"exec": "$HOME/.config/waybar/mediaplayer.py --verbose 2> /dev/null" // Script in resources folder
+        //"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
