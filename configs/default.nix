@@ -10,4 +10,8 @@
     ".config/kanata/config.kbd".source = ./config.kbd;
     ".config/mako/config".source = ./mako/config;
   };
+  alacritty = {
+    ".config/alacritty.toml".source = ./alacritty.toml;
+    ".config/alacritty".source = ./alacritty;
+  };
 }

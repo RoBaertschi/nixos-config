@@ -1,0 +1,32 @@
+[font.bold]
+family = "JetBrainsMono NF"
+
+[font.bold_italic]
+family = "JetBrainsMono NF"
+
+[font.italic]
+family = "JetBrainsMono NF"
+
+[font.normal]
+family = "JetBrainsMono NF"
+
+# [colors.primary]
+# foreground = "#ffffff"
+# background = "#000000"
+# [colors.cursor]
+# cursor = "#ff5fff"
+# text = "#ffffff"
+# [colors.vi_mode_cursor]
+# cursor = "#ff5fff"
+# text = "#ffffff"
+# [colors.search]
+# matches = { foreground = "#ffffff", background = "#5fd7ff" }
+# focused_match = { foreground = "#000000", background = "#d78700" }
+
+[general]
+import = ["~/.config/alacritty/themes/tokyonight-night.toml"]
+
+[keyboard]
+bindings = [
+    { key = "/", mods = "SHIFT", mode = "Vi|~Search", action = "SearchForward" },
+]
