@@ -40,6 +40,7 @@ with lib; {
 
               # Bar
               waybar
+              font-awesome # Icons
 
               # Keyboard
               kanata
