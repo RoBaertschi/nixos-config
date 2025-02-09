@@ -17,6 +17,7 @@ with lib; {
       (python313.withPackages (pp: [pp.pygobject3 pp.rich pp.pydbus pp.typer]))
       gobject-introspection
       gtk3
+      playerctl
     ];
     home-manager = {
       users = {
