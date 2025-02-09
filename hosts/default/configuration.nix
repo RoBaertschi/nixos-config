@@ -14,6 +14,7 @@
     ../../modules/main-user.nix
     ../../modules/programs.nix
     ../../modules/hyprland.nix
+    ../../modules/tmux.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -79,6 +80,7 @@
     backupFileExtension = "bak";
   };
   hyprland.enable = true;
+  tmux.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
