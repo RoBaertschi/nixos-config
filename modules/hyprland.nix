@@ -22,6 +22,7 @@ with lib; {
               python313Packages.pydbus
       (python313.withPackages (pp: [pp.pygobject3]))
       gobject-introspection
+      gtk3
     ];
     home-manager = {
       users = {
