@@ -96,7 +96,7 @@
         "max-length": 40,
         "format-icons": {
             "spotify": "",
-            "default": "🎜"
+            "default": "󰎆"
         },
         "escape": true,
         "exec": "nix-shell -p python3Packages.pygobject3 -p gobject-introspection -p playerctl --run \"~/.config/waybar/mediaplayer.py\"",
