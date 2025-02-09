@@ -20,6 +20,7 @@ with lib; {
               python313Packages.typer
               python313Packages.rich
               python313Packages.pydbus
+      (python313.withPackages (pp: [pp.pygobject3]))
       gobject-introspection
     ];
     home-manager = {
