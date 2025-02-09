@@ -14,13 +14,7 @@ with lib; {
   };
   config = mkIf config.hyprland.enable {
     environment.systemPackages = with pkgs; [
-              # Programs referenced in the hyprland.conf file
-              python313
-              python313Packages.pygobject3
-              python313Packages.typer
-              python313Packages.rich
-              python313Packages.pydbus
-      (python313.withPackages (pp: [pp.pygobject3]))
+      (python313.withPackages (pp: [pp.pygobject3 pp.rich pp.pydbus pp.typer]))
       gobject-introspection
       gtk3
     ];
