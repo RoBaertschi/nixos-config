@@ -14,6 +14,7 @@ with lib; {
   };
   config = mkIf config.hyprland.enable {
     environment.systemPackages = with pkgs; [
+      python3
       python3Packages.pygobject3
       python3Packages.rich
       python3Packages.pydbus
