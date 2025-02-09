@@ -20,6 +20,7 @@ with lib; {
               python313Packages.typer
               python313Packages.rich
               python313Packages.pydbus
+      gobject-introspection
     ];
     home-manager = {
       users = {
