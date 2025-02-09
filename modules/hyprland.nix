@@ -14,8 +14,10 @@ with lib; {
   };
   config = mkIf config.hyprland.enable {
     environment.systemPackages = with pkgs; [
-      (python3.withPackages (pp: [pp.pygobject3 pp.rich pp.pydbus pp.typer]))
       python3Packages.pygobject3
+      python3Packages.rich
+      python3Packages.pydbus
+      python3Packages.typer
       gobject-introspection
       playerctl
     ];
