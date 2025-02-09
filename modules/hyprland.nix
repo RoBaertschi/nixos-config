@@ -13,6 +13,14 @@ with lib; {
     };
   };
   config = mkIf config.hyprland.enable {
+    environment.systemPackages = with pkgs; [
+              # Programs referenced in the hyprland.conf file
+              python313
+              python313Packages.pygobject3
+              python313Packages.typer
+              python313Packages.rich
+              python313Packages.pydbus
+    ];
     home-manager = {
       users = {
         "${config.main-user.userName}" = {
@@ -39,12 +47,6 @@ with lib; {
               fuzzel
               bemoji
 
-              # Programs referenced in the hyprland.conf file
-              python313
-              python313Packages.pygobject3
-              python313Packages.typer
-              python313Packages.rich
-              python313Packages.pydbus
               # Audio Controll
               wireplumber
 
