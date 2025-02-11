@@ -97,6 +97,10 @@
     enable = true;
     enableSSHSupport = true;
   };
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [];
+  };
 
   # List services that you want to enable:
 
