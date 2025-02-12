@@ -28,6 +28,7 @@
           kitty
           alacritty
           firefox
+          google-chrome
           pavucontrol
 
           kdePackages.dolphin
