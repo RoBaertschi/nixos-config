@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    shelly.url = "github:RoBaertschi/shelly-scripts";
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
 
     home-manager = {

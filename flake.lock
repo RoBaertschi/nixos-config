@@ -74,11 +74,28 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1739214665,
+        "narHash": "sha256-26L8VAu3/1YRxS8MHgBOyOM8xALdo6N0I04PgorE7UM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "64e75cd44acf21c7933d61d7721e812eac1b5a0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "rose-pine-hyprcursor": "rose-pine-hyprcursor"
+        "rose-pine-hyprcursor": "rose-pine-hyprcursor",
+        "shelly": "shelly"
       }
     },
     "rose-pine-hyprcursor": {
@@ -98,6 +115,24 @@
       "original": {
         "owner": "ndom91",
         "repo": "rose-pine-hyprcursor",
+        "type": "github"
+      }
+    },
+    "shelly": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1739381247,
+        "narHash": "sha256-SvlrVAviPXeKZuGzb4gM2BUZNw0l7wNIT6GvfJdj9q0=",
+        "owner": "RoBaertschi",
+        "repo": "shelly-scripts",
+        "rev": "9d169d01eb9adb612e6145610d18d4f6164e840c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RoBaertschi",
+        "repo": "shelly-scripts",
         "type": "github"
       }
     },
