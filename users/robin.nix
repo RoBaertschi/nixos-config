@@ -47,6 +47,8 @@ in {
     pkgs.zoxide
     # pkgs.libsForQt6.kio-extras
     inputs.shelly.defaultPackage.${pkgs.system}
+    pkgs.man-pages
+    pkgs.man-pages-posix
   ];
 
   home.pointerCursor = {

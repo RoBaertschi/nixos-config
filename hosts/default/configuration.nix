@@ -35,6 +35,7 @@
       '';
     };
   };
+  documentation.dev.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   services.flatpak.enable = true;
