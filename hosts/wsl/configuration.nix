@@ -44,10 +44,13 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "de_CH.UTF-8";
-  
+
   wsl.enable = true;
   wsl.defaultUser = config.main-user.userName;
   nix.settings.experimental-features = ["nix-command" "flakes"];
+  environment.systemPackages = with pkgs; [
+    wl-clipboard
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
