@@ -38,6 +38,7 @@
   documentation.dev.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  virtualisation.docker.enable = true;
   services.flatpak.enable = true;
 
   networking.hostName = "deez-nix"; # Define your hostname.
