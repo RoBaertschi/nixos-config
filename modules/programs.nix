@@ -7,13 +7,14 @@
   options = {
     progs = {
       enable = lib.mkEnableOption "enable the program module";
+      graphical = lib.mkOption { description = "disable the graphical applications"; default = false; };
       programming = {
         enable = lib.mkEnableOption "install programming programs";
       };
     };
   };
   config = lib.mkIf config.progs.enable {
-    programs.steam.enable = true;
+    programs.steam.enable = !config.progs.graphical;
     environment.systemPackages = with pkgs;
       lib.mkMerge [
         [
@@ -25,6 +26,9 @@
 
           fastfetch
 
+          neovim
+        ]
+        (lib.mkIf (!config.progs.graphical) [
           kitty
           alacritty
           firefox
@@ -37,8 +41,8 @@
           pkgs.kdePackages.kdegraphics-thumbnailers
           pkgs.kdePackages.kio-extras
           pkgs.kdePackages.kservice
-          neovim
         ]
+        )
         (lib.mkIf (config.progs.programming.enable) [
           # C/C++
           gcc
