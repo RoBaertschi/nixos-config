@@ -42,7 +42,7 @@
           pkgs.kdePackages.kio-extras
           pkgs.kdePackages.kservice
 
-          pkgs.equicord
+          pkgs.equibop
         ]
         )
         (lib.mkIf (config.progs.programming.enable) [
