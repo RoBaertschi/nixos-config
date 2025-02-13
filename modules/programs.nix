@@ -41,6 +41,8 @@
           pkgs.kdePackages.kdegraphics-thumbnailers
           pkgs.kdePackages.kio-extras
           pkgs.kdePackages.kservice
+
+          pkgs.equicord
         ]
         )
         (lib.mkIf (config.progs.programming.enable) [
