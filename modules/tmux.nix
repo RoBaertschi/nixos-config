@@ -25,6 +25,7 @@ in {
             prefix = "C-Space";
             keyMode = "vi";
             extraConfig = ''
+              set-option -a terminal-features 'alacritty:RGB'
               bind -n M-H previous-window
               bind -n M-L next-window
               bind-key -T copy-mode-vi v send-keys -X begin-selection
