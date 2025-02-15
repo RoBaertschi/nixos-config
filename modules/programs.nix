@@ -18,12 +18,13 @@
     environment.systemPackages = with pkgs;
       lib.mkMerge [
         [
+          # Nix config
           alejandra
 
           wget
           unzip
           jq
-
+          file
           fastfetch
 
           neovim
@@ -58,6 +59,7 @@
 
           # Utils
           git
+          lazygit
           gh
           fzf
           ripgrep
