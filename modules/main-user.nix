@@ -31,7 +31,7 @@ with lib.types; {
     users.users.${config.main-user.userName} = {
       isNormalUser = true;
       description = config.main-user.description;
-      extraGroups = ["networkmanager" "wheel" "audio" "video" "robin" "docker"];
+      extraGroups = ["networkmanager" "wheel" "audio" "video" "robin" "docker" "input" "uinput"];
       packages = with pkgs; [];
       shell = pkgs.zsh;
     };
