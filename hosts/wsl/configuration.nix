@@ -22,6 +22,7 @@
     programming.enable = true;
   };
   main-user.enable = true;
+  environment.enableDebugInfo = true;
   # For home manager
   programs.dconf.enable = true;
   home-manager = {
