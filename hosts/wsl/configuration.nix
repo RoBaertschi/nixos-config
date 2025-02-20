@@ -47,6 +47,7 @@
   i18n.defaultLocale = "de_CH.UTF-8";
 
   wsl.enable = true;
+  virtualisation.docker.enable = true;
   wsl.defaultUser = config.main-user.userName;
   nix.settings.experimental-features = ["nix-command" "flakes"];
   environment.systemPackages = with pkgs; [
