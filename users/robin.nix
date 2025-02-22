@@ -49,6 +49,7 @@ in {
     inputs.shelly.defaultPackage.${pkgs.system}
     pkgs.man-pages
     pkgs.man-pages-posix
+    pkgs.pass
   ];
 
   home.pointerCursor = {
