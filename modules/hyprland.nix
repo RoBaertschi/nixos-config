@@ -70,6 +70,8 @@ with lib; {
               bibata-cursors
 
               playerctl
+
+              inputs.quickshell.packages.${pkgs.system}.default
             ];
           };
         };
