@@ -57,6 +57,7 @@
           nodejs_23
           go
           python3
+          zig
 
           # Utils
           git
