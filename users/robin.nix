@@ -127,6 +127,9 @@ in {
     enable = true;
     plugins = ["git" "sudo" "fzf" "zoxide"];
     theme = "robbyrussell";
+    extraConfig = ''
+      fastfetch
+    '';
   };
 
   # Let Home Manager install and manage itself.
