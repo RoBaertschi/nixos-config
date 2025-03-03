@@ -107,6 +107,12 @@ in {
     # EDITOR = "emacs";
   };
 
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
   programs.zsh = {
     syntaxHighlighting = {
       enable = true;
@@ -125,7 +131,7 @@ in {
   programs.zsh.enable = true;
   programs.zsh.oh-my-zsh = {
     enable = true;
-    plugins = ["git" "sudo" "fzf" "zoxide"];
+    plugins = ["git" "sudo" "fzf" "zoxide" "direnv"];
     theme = "robbyrussell";
     extraConfig = ''
       fastfetch
