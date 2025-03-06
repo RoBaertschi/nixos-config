@@ -3,7 +3,7 @@ set -e
 
 TYPE="switch"
 
-if [ $1 = "boot" ]; then
+if [ "$1" = "boot" ]; then
   TYPE="boot"
 fi
 
