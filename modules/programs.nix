@@ -71,6 +71,7 @@
         ])
         (lib.mkIf (config.progs.kube.enable) [
           minikube
+          argocd
           kubectl
           kubernetes-helm
         ])
