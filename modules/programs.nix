@@ -72,6 +72,7 @@
         (lib.mkIf (config.progs.kube.enable) [
           minikube
           kubectl
+          kubernetes-helm
         ])
       ];
     programs.neovim = lib.mkIf config.progs.programming.enable {
