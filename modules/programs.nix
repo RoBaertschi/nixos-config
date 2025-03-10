@@ -11,6 +11,9 @@
       programming = {
         enable = lib.mkEnableOption "install programming programs";
       };
+      kube = {
+        enable = lib.mkEnableOption "install minikube and kubectl";
+      };
     };
   };
   config = lib.mkIf config.progs.enable {
@@ -65,6 +68,10 @@
           gh
           fzf
           ripgrep
+        ])
+        (lib.mkIf (config.progs.kube.enable) [
+          minikube
+          kubectl
         ])
       ];
     programs.neovim = lib.mkIf config.progs.programming.enable {

@@ -20,6 +20,7 @@
     enable = true;
     graphical = true;
     programming.enable = true;
+    kube.enable = true;
   };
   main-user.enable = true;
   environment.enableDebugInfo = true;
