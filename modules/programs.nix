@@ -41,6 +41,7 @@
           pavucontrol
 
           prismlauncher
+          appimage-run
 
           kdePackages.dolphin
           kdePackages.breeze
