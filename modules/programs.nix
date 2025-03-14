@@ -40,14 +40,16 @@
           google-chrome
           pavucontrol
 
-          kdePackages.dolphin
-          pkgs.kdePackages.breeze
-          pkgs.kdePackages.qtsvg
-          pkgs.kdePackages.kdegraphics-thumbnailers
-          pkgs.kdePackages.kio-extras
-          pkgs.kdePackages.kservice
+          prismlauncher
 
-          pkgs.equibop
+          kdePackages.dolphin
+          kdePackages.breeze
+          kdePackages.qtsvg
+          kdePackages.kdegraphics-thumbnailers
+          kdePackages.kio-extras
+          kdePackages.kservice
+
+          equibop
         ]
         )
         (lib.mkIf (config.progs.programming.enable) [
