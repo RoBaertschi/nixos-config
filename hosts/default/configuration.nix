@@ -105,7 +105,7 @@
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
-      alsa-lib.out at-spi2-atk.out cairo.out cups.lib dbus.lib expat.out glib.out libdrm.out libgbm.out libxkbcommon.out nspr.out nss_latest.out pango.out xorg.libX11.out xorg.libXcomposite.out xorg.libXdamage.out xorg.libXext.out xorg.libXfixes.out xorg.libXrandr.out xorg.libxcb.out
+      alsa-lib at-spi2-atk cairo cups.lib dbus.lib expat glib libdrm libgbm libxkbcommon nspr nss_latest pango xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext xorg.libXfixes xorg.libXrandr xorg.libxcb
     ];
   };
 
