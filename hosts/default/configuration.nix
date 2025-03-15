@@ -104,7 +104,7 @@
   };
   programs.nix-ld = {
     enable = true;
-    libraries = with pkgs; [];
+    libraries = with pkgs; [nss];
   };
 
   # List services that you want to enable:
