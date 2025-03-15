@@ -104,7 +104,9 @@
   };
   programs.nix-ld = {
     enable = true;
-    libraries = with pkgs; [nss];
+    libraries = with pkgs; [
+      alsa-lib.out at-spi2-atk.out cairo.out cups.lib dbus.lib expat.out glib.out libdrm.out libgbm.out libxkbcommon.out nspr.out nss_latest.out pango.out xorg.libX11.out xorg.libXcomposite.out xorg.libXdamage.out xorg.libXext.out xorg.libXfixes.out xorg.libXrandr.out xorg.libxcb.out
+    ];
   };
 
   # List services that you want to enable:
