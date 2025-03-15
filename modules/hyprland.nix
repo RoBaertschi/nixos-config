@@ -71,6 +71,10 @@ with lib; {
 
               playerctl
 
+              # Screenshots
+              hyprshot
+
+              # Rice
               inputs.quickshell.packages.${pkgs.system}.default
             ];
           };
