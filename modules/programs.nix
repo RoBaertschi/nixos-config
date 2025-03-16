@@ -30,6 +30,7 @@
           file
           fastfetch
           fd
+          btop
 
           neovim
         ]
