@@ -66,6 +66,8 @@
           go
           python3
           zig
+          odin
+          ols
 
           # Utils
           git
