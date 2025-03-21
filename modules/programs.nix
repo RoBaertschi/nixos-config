@@ -68,6 +68,7 @@
           zig
           odin
           ols
+          c3c
 
           # Utils
           git
