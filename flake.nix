@@ -6,6 +6,8 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     shelly.url = "github:RoBaertschi/shelly-scripts";
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
+    c3c.url = "github:c3lang/c3c";
+    c3c.inputs.nixpkgs.follows = "nixpkgs";
 
     home-manager = {
       url = "github:nix-community/home-manager";

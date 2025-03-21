@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }: {
   options = {
@@ -68,7 +69,7 @@
           zig
           odin
           ols
-          c3c
+          inputs.c3c.packages.${pkgs.system}.c3c
 
           # Utils
           git
