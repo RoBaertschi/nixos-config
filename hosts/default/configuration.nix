@@ -15,6 +15,7 @@
     ../../modules/programs.nix
     ../../modules/hyprland.nix
     ../../modules/tmux.nix
+    ../../modules/nix-ld.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -76,6 +77,7 @@
     enable = true;
     programming.enable = true;
   };
+  nix-ld.enable = true;
   main-user.enable = true;
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
@@ -101,12 +103,6 @@
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
-  };
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      alsa-lib at-spi2-atk cairo cups.lib dbus.lib expat glib libdrm libgbm libxkbcommon nspr nss_latest pango xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext xorg.libXfixes xorg.libXrandr xorg.libxcb xorg.libXcursor libGL xorg.libXi glfw xorg.libX11.dev
-    ];
   };
 
   # List services that you want to enable:

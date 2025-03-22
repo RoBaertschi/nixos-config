@@ -8,7 +8,10 @@
   options = {
     progs = {
       enable = lib.mkEnableOption "enable the program module";
-      graphical = lib.mkOption { description = "disable the graphical applications"; default = false; };
+      graphical = lib.mkOption {
+        description = "disable the graphical applications";
+        default = false;
+      };
       programming = {
         enable = lib.mkEnableOption "install programming programs";
       };
@@ -35,25 +38,26 @@
 
           neovim
         ]
-        (lib.mkIf (!config.progs.graphical) [
-          kitty
-          alacritty
-          firefox
-          google-chrome
-          pavucontrol
+        (
+          lib.mkIf (!config.progs.graphical) [
+            kitty
+            alacritty
+            firefox
+            google-chrome
+            pavucontrol
 
-          prismlauncher
-          appimage-run
+            prismlauncher
+            appimage-run
 
-          kdePackages.dolphin
-          kdePackages.breeze
-          kdePackages.qtsvg
-          kdePackages.kdegraphics-thumbnailers
-          kdePackages.kio-extras
-          kdePackages.kservice
+            kdePackages.dolphin
+            kdePackages.breeze
+            kdePackages.qtsvg
+            kdePackages.kdegraphics-thumbnailers
+            kdePackages.kio-extras
+            kdePackages.kservice
 
-          equibop
-        ]
+            equibop
+          ]
         )
         (lib.mkIf (config.progs.programming.enable) [
           # C/C++
