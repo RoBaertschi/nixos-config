@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742573338,
-        "narHash": "sha256-RUXuJp7Ou7eCghKbSAr4FnNFVzjW6kADBOsSQNUgBHw=",
+        "lastModified": 1743010268,
+        "narHash": "sha256-dwyZ9ZRoQZHdEpokFlHxE6WP0CqELstb0A0tQuh+e8I=",
         "owner": "c3lang",
         "repo": "c3c",
-        "rev": "a03d821602888945e38f76205e6987e9506701c8",
+        "rev": "638d5332ffd786d95b05b0eeec136b76b66dda6c",
         "type": "github"
       },
       "original": {
@@ -62,11 +62,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742588233,
-        "narHash": "sha256-Fi5g8H5FXMSRqy+mU6gPG0v+C9pzjYbkkiePtz8+PpA=",
+        "lastModified": 1742996658,
+        "narHash": "sha256-snxgTLVq6ooaD3W3mPHu7LVWpoZKczhxHAUZy2ea4oA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "296ddc64627f4a6a4eb447852d7346b9dd16197d",
+        "rev": "693840c01b9bef9e54100239cef937e53d4661bf",
         "type": "github"
       },
       "original": {
@@ -103,11 +103,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1742481215,
-        "narHash": "sha256-m7I/2UaGEFOI+Cy0RoADBi10NZt1WD5N3q2jUwPprE4=",
+        "lastModified": 1742999260,
+        "narHash": "sha256-wgeb7kSod9MAGm39MsVLsy2zxSbtCtckCkgfbjg6TLM=",
         "owner": "nix-community",
         "repo": "NixOS-WSL",
-        "rev": "96d7df91cce0d7cd30d1958fe1aefcb5f9bfced7",
+        "rev": "64d679540fa4d7e2afdbbb53ea63e3e5019c1f52",
         "type": "github"
       },
       "original": {
@@ -135,11 +135,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1742422364,
-        "narHash": "sha256-mNqIplmEohk5jRkqYqG19GA8MbQ/D4gQSK0Mu4LvfRQ=",
+        "lastModified": 1742889210,
+        "narHash": "sha256-hw63HnwnqU3ZQfsMclLhMvOezpM7RSB0dMAtD5/sOiw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a84ebe20c6bc2ecbcfb000a50776219f48d134cc",
+        "rev": "698214a32beb4f4c8e3942372c694f40848b360d",
         "type": "github"
       },
       "original": {
@@ -188,11 +188,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742550407,
-        "narHash": "sha256-92UpZ40jjBafN4I1lGxa8yyBvCiKXO5kUp0if6qSpI0=",
+        "lastModified": 1742983896,
+        "narHash": "sha256-xXtp13lV08KUCcOgZZNno/oRw+UtVB3CItlQijtQlyE=",
         "ref": "refs/heads/master",
-        "rev": "1a20c39fbaff05988dcc510a294fb8078a600e8b",
-        "revCount": 492,
+        "rev": "62ccab5d3043a3256b2ab68054add1b8a2f6857e",
+        "revCount": 494,
         "type": "git",
         "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
       },
