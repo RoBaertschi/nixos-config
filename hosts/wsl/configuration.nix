@@ -17,6 +17,7 @@
     ../../modules/main-user.nix
     ../../modules/programs.nix
     ../../modules/tmux.nix
+    ../../modules/nix-ld.nix
   ];
   progs = {
     enable = true;
@@ -36,6 +37,7 @@
     backupFileExtension = "bak";
   };
   tmux.enable = true;
+  nix-ld.enable = true;
   nixpkgs.config.allowUnfree = true;
 
   documentation.dev.enable = true;
