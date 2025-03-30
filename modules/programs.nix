@@ -55,6 +55,7 @@
             kdePackages.kdegraphics-thumbnailers
             kdePackages.kio-extras
             kdePackages.kservice
+            kdePackages.ark
 
             equibop
           ]
