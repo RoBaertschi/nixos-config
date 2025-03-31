@@ -46,6 +46,7 @@ in {
     cursorPackage
     pkgs.zoxide
     # pkgs.libsForQt6.kio-extras
+    pkgs.bat
     inputs.shelly.defaultPackage.${pkgs.system}
     pkgs.man-pages
     pkgs.man-pages-posix
