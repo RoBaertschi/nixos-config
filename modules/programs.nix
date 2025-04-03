@@ -60,6 +60,7 @@
             equibop
 
             vlc
+            ffmpeg
           ]
         )
         (lib.mkIf (config.progs.programming.enable) [
