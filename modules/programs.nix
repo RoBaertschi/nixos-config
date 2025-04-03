@@ -58,6 +58,8 @@
             kdePackages.ark
 
             equibop
+
+            vlc
           ]
         )
         (lib.mkIf (config.progs.programming.enable) [
