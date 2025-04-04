@@ -22,6 +22,9 @@
   };
   config = lib.mkIf config.progs.enable {
     programs.steam.enable = !config.progs.graphical;
+    nixpkgs.config.permittedInsecurePackages = [
+      "openssl-1.1.1w"
+    ];
     environment.systemPackages = with pkgs;
       lib.mkMerge [
         [
@@ -40,6 +43,8 @@
         ]
         (
           lib.mkIf (!config.progs.graphical) [
+            sublime4-dev
+
             kitty
             alacritty
             firefox
