@@ -43,7 +43,7 @@
         ]
         (
           lib.mkIf (!config.progs.graphical) [
-            sublime4-dev
+            sublime4
 
             kitty
             alacritty
