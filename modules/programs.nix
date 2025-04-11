@@ -62,7 +62,7 @@
             kdePackages.kservice
             kdePackages.ark
 
-            godot-mono
+            godot
 
             equibop
 
