@@ -62,6 +62,8 @@
             kdePackages.kservice
             kdePackages.ark
 
+            godot-mono
+
             equibop
 
             vlc
