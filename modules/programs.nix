@@ -61,6 +61,7 @@
             kdePackages.kio-extras
             kdePackages.kservice
             kdePackages.ark
+            kdePackages.kate
             selectdefaultapplication
 
             godot
