@@ -36,6 +36,7 @@ let cfg = config.nix-ld; in {
         glfw
         xorg.libX11.dev
         gtk3
+        vulkan-loader
       ];
     };
   };
