@@ -35,6 +35,7 @@ let cfg = config.nix-ld; in {
         xorg.libXi
         glfw
         xorg.libX11.dev
+        gtk3
       ];
     };
   };
