@@ -91,6 +91,7 @@
 
           vala
           meson # for vala ls
+          pkg-config
 
           # Utils
           git
