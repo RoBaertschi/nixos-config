@@ -92,6 +92,7 @@
           vala
           vala-language-server
           meson
+          ninja
 
           # Utils
           git
