@@ -91,6 +91,7 @@
 
           vala
           vala-language-server
+          meson
 
           # Utils
           git
