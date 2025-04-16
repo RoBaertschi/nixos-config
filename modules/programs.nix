@@ -90,8 +90,7 @@
           tup
 
           vala
-          meson # for vala ls
-          pkg-config
+          vala-language-server
 
           # Utils
           git
