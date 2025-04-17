@@ -70,6 +70,8 @@
 
             vlc
             ffmpeg
+
+            obsidian
           ]
         )
         (lib.mkIf (config.progs.programming.enable) [
