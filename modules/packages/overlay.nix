@@ -7,5 +7,6 @@ final: prev: {
       rev = "dev-2025-04";
       hash = "sha256-dVC7MgaNdgKy3X9OE5ZcNCPnuDwqXszX9iAoUglfz2k=";
     };
+    buildInputs = [prev.sdl3];
   };
 }
