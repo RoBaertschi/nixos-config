@@ -64,7 +64,7 @@
             kdePackages.kate
             selectdefaultapplication
 
-            godot
+            # godot
 
             equibop
 
