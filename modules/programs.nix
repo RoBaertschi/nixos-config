@@ -21,6 +21,7 @@
     };
   };
   config = lib.mkIf config.progs.enable {
+    nixpkgs.overlays = [ (import ./packages/overlay.nix) ];
     programs.steam.enable = !config.progs.graphical;
     nixpkgs.config.permittedInsecurePackages = [
       "openssl-1.1.1w"
