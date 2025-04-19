@@ -86,7 +86,7 @@
           go
           python3
           zig
-          odin
+          # odin
           ols
           inputs.c3c.packages.${pkgs.system}.c3c
           tup
