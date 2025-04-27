@@ -89,6 +89,7 @@
           zig
           odin
           ocaml
+          opam
           ols
           inputs.c3c.packages.${pkgs.system}.c3c
           tup
