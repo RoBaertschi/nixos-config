@@ -88,6 +88,7 @@
           python3
           zig
           odin
+          ocaml
           ols
           inputs.c3c.packages.${pkgs.system}.c3c
           tup
