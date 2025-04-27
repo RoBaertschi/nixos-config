@@ -127,8 +127,12 @@ in {
     shellAliases = {
       "vim" = "nvim";
     };
-    initExtraFirst = ''
+    initExtra = lib.mkBefore ''
       export XDG_DATA_DIRS=$XDG_DATA_DIRS:/usr/share:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share
+    '';
+
+    initContent = ''
+      [[ ! -r '/home/robin/.opam/opam-init/init.zsh' ]] || source '/home/robin/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
     '';
   };
 
