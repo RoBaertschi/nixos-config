@@ -139,7 +139,7 @@ in {
   programs.zsh.enable = true;
   programs.zsh.oh-my-zsh = {
     enable = true;
-    plugins = ["git" "sudo" "fzf" "zoxide" "direnv" "opam"];
+    plugins = ["git" "sudo" "fzf" "zoxide" "direnv" "ocaml"];
     theme = "robbyrussell";
     extraConfig = ''
       fastfetch
