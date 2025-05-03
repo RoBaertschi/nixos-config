@@ -106,6 +106,8 @@
           fzf
           ripgrep
           scc
+
+          tldr
         ])
         (lib.mkIf (config.progs.kube.enable) [
           minikube
