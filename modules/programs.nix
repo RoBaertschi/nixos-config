@@ -44,6 +44,7 @@
           fastfetch
           fd
           btop
+          nh
 
           neovim
         ]
