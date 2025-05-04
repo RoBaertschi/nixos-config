@@ -26,6 +26,11 @@
     nixpkgs.config.permittedInsecurePackages = [
       "openssl-1.1.1w"
     ];
+    
+    services.udisks2 = lib.mkIf (!config.progs.graphical) {
+      enable = true;
+    };
+
     environment.systemPackages = with pkgs;
       lib.mkMerge [
         [
