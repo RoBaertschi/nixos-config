@@ -73,7 +73,7 @@
     serviceConfig = {
       Type = "oneshot";
       ExecStart = ''
-        ln -sfv /mnt/wslg/runtime-dir/wayland-0* $XDG_RUNTIME_DIR/
+        ${pkgs.coreutils}/bin/ln -sfv /mnt/wslg/runtime-dir/wayland-0* $XDG_RUNTIME_DIR/
       '';
     };
   };
