@@ -75,6 +75,7 @@
 
             equibop
 
+            streamlink
             vlc
             ffmpeg
 
