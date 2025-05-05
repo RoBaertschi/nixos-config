@@ -62,4 +62,17 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
+
+  systemd.user.services."link-wayland-socket" = {
+    description = "Link wayland-0 to user runtem dir";
+    after = ["user-runtime-dir@.service"];
+    wantedBy = ["default.target"];
+
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = ''
+        ln -sf /mnt/wslg/runtime-dir/wayland-0* $XDG_RUNTIME_DIR/
+      '';
+    };
+  };
 }
