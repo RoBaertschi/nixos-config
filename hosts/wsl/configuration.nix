@@ -67,6 +67,7 @@
     description = "Link wayland-0 to user runtem dir";
     after = ["user-runtime-dir@.service"];
     wantedBy = ["default.target"];
+    path = [ pkgs.coreutils ];
 
     serviceConfig = {
       Type = "oneshot";
