@@ -64,6 +64,7 @@
   system.stateVersion = "24.05"; # Did you read the comment?
 
   systemd.user.services."link-wayland-socket" = {
+    enable = true;
     description = "Link wayland-0 to user runtem dir";
     after = ["user-runtime-dir@.service"];
     wantedBy = ["default.target"];
