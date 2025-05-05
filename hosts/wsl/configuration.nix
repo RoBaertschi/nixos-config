@@ -73,7 +73,7 @@
     serviceConfig = {
       Type = "oneshot";
       ExecStart = ''
-        /usr/bin/env sh -c "${pkgs.coreutils}/bin/ln -sfv /mnt/wslg/runtime-dir/wayland-0* %t/"
+        ${pkgs.coreutils}/bin/ln -sfv /mnt/wslg/runtime-dir/wayland-0.lock /mnt/wslg/runtime-dir/wayland-0 %t/
       '';
     };
   };
