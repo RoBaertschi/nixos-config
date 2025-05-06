@@ -132,6 +132,7 @@ in {
     '';
 
     initContent = ''
+      export PATH="$HOME/go/bin:$PATH"
       [[ ! -r '/home/robin/.opam/opam-init/init.zsh' ]] || source '/home/robin/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
     '';
   };
@@ -139,7 +140,7 @@ in {
   programs.zsh.enable = true;
   programs.zsh.oh-my-zsh = {
     enable = true;
-    plugins = ["git" "sudo" "fzf" "zoxide" "direnv" "go"];
+    plugins = ["git" "sudo" "fzf" "zoxide" "direnv"];
     theme = "robbyrussell";
     extraConfig = ''
       fastfetch
