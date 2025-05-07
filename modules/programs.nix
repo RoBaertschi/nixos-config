@@ -55,6 +55,7 @@
             kitty
             alacritty
             firefox
+            inputs.zen-browser.packages.${pkgs.system}.default
             google-chrome
             pavucontrol
 
