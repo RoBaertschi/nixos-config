@@ -9,5 +9,5 @@ final: prev: {
     };
     buildInputs = [prev.sdl3];
   };
-  nnd = prev.callPackage ./nnd.nix;
+  nnd = prev.callPackage ./nnd.nix {};
 }

@@ -106,6 +106,7 @@
           vala-language-server
           meson
           ninja
+          nnd
 
           # Utils
           git
