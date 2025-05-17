@@ -45,6 +45,7 @@
           fd
           btop
           nh
+          openssl
 
           neovim
         ]
