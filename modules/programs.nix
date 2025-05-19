@@ -74,6 +74,8 @@
             selectdefaultapplication
 
             qemu_full
+            OVMF
+            OVMFFull
             quickemu
 
             # godot
