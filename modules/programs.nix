@@ -26,7 +26,7 @@
     nixpkgs.config.permittedInsecurePackages = [
       "openssl-1.1.1w"
     ];
-    
+
     services.udisks2 = lib.mkIf (!config.progs.graphical) {
       enable = true;
     };
@@ -73,6 +73,9 @@
             kdePackages.kate
             selectdefaultapplication
 
+            qemu_full
+            quickemu
+
             # godot
 
             equibop
@@ -92,7 +95,7 @@
           # Languages
           rustup
           bun
-          nodejs_23
+          nodejs_24
           go
           python3
           zig
