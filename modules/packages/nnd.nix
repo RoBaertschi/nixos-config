@@ -1,10 +1,10 @@
 {lib, fetchurl, stdenv}: stdenv.mkDerivation rec {
   pname = "nnd";
-  version = "0.20";
+  version = "0.27";
 
   src = fetchurl {
     url = "https://github.com/al13n321/nnd/releases/download/v${version}/nnd";
-    sha256 = "03301axm4vrdlmj6y2svhg139hq6axpdwbsf4k7m4i49wyq6xslr";
+    sha256 = "1z8lq5728qg142pwiaig8qmb5fqqqdjaxvgy65jqm214zznyd85z";
     curlOptsList = ["-L"];
   };
 

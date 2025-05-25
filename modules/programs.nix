@@ -87,6 +87,10 @@
             ffmpeg
 
             obsidian
+
+            jetbrains.idea-ultimate
+
+            heroic
           ]
         )
         (lib.mkIf (config.progs.programming.enable) [
