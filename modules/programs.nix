@@ -46,7 +46,7 @@
           btop
           nh
           openssl
-          gitea
+          tea
 
           neovim
         ]
