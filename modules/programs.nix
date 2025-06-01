@@ -49,6 +49,7 @@
           tea
 
           neovim
+	  tree-sitter
         ]
         (
           lib.mkIf (!config.progs.graphical) [
