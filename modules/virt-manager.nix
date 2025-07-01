@@ -15,5 +15,11 @@
     users.groups.libvirtd.members = [config.main-user.userName];
     virtualisation.libvirtd.enable = true;
     virtualisation.spiceUSBRedirection.enable = true;
+    home-manager.users."${config.main-user.userName}".dconf.settings = {
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = ["qemu:///system"];
+        uris = ["qemu:///system"];
+      };
+    };
   };
 }
