@@ -16,6 +16,7 @@
     ../../modules/hyprland.nix
     ../../modules/tmux.nix
     ../../modules/nix-ld.nix
+    ../../modules/virt-manager.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -88,6 +89,7 @@
   };
   hyprland.enable = true;
   tmux.enable = true;
+  virt-manager.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
