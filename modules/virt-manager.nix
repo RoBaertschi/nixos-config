@@ -15,6 +15,8 @@
     users.groups.libvirtd.members = [config.main-user.userName];
     virtualisation.libvirtd.enable = true;
     virtualisation.spiceUSBRedirection.enable = true;
+    services.dnsmasq.enable = true;
+    services.resolved.enable = false;
     networking.firewall.trustedInterfaces = ["virbr0" "vnet0"];
     home-manager.users."${config.main-user.userName}".dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
