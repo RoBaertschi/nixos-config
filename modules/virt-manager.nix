@@ -15,6 +15,7 @@
     users.groups.libvirtd.members = [config.main-user.userName];
     virtualisation.libvirtd.enable = true;
     virtualisation.spiceUSBRedirection.enable = true;
+    services.dnsmasq.enable = true;
     home-manager.users."${config.main-user.userName}".dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
         autoconnect = ["qemu:///system"];
