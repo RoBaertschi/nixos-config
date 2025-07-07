@@ -33,7 +33,7 @@
       "deezpc.conf" = ''
         title DEEZPC Arch
         efi /efi/edk2-uefi-shell/shell.efi
-        options -nointerrupt -nomap -noversion BLK10:EFI\DEEZOS\grubx64.efi
+        options -nointerrupt -nomap -noversion BLK10:EFI\limine\BOOTX86.efi
       '';
     };
   };
